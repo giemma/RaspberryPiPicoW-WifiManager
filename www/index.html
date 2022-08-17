@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Raspberry PI Pico W - %title%</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" type="text/css" href="http://192.168.4.1/style.css">
+</head>
+<body>
+	<div class="topnav">
+		<h1>Raspberry PI Pico W</h1>
+		<h2>%title%</h2>
+	</div>
+  
+	<div class="menubar">
+		<a class="btn button-on" href="/">Home</a>
+		<a class="btn button-off" href="/info">Info</a>
+	</div>
+  
+	<div class="content">
+
+		<div class="card-grid">
+			<div class="card">
+				<p>
+					Select your network and type the password
+				</p>
+				
+				<form action="/" method="POST">
+				
+					<div class="row">
+						<div class="col-30">
+							<label for="ssid">SSID</label>
+						</div>
+						<div class="col-70">
+							<select id ="txtnetwork" name="txtnetwork" >
+								%options%
+								<!--
+								<option></option>
+								<option>Rete1</option>
+								<option>Rete2</option>
+								<option>Rete3</option>
+								-->
+							</select>
+						</div>
+					</div>
+					
+					
+					<div class="row">
+						<div class="col-30">
+							<label for="txtpassword">Password</label>
+						</div>
+						<div class="col-70">
+							<input type="text" id ="txtpassword" name="txtpassword">
+						</div>
+					</div>
+					
+					<div class="">
+						<input type ="submit" value ="Submit" class="btn">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="bottomnav">
+		<h1>iemma.it</h1>
+	</div>
+  
+</body>
+</html>
